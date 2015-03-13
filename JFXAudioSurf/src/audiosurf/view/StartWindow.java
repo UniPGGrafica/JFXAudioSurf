@@ -43,7 +43,7 @@ public class StartWindow extends Application {
 	 */
 	private final static String TITLE = "JFX Audiosurf";	//Titolo della finestra
 	private final static String MENU_BACKGROUND = "img/nebulosa.jpg";
-	private final static String STAGE_ICON = "img/ico.jpg";
+	private final static String STAGE_ICON = "img/ico.png";
 	private final static String MENU_GUI_FXML = "MenuGUI.fxml";
 	private final static int MIN_WIDTH = 800;
 	private final static int MIN_HEIGHT = 600;
