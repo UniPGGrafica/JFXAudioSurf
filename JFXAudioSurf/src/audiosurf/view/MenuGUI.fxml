@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-position: center center;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="audiosurf.view.SimpleController">
+   <children>
+      <ToolBar fx:id="upToolBar" layoutX="-14.0" layoutY="159.0" nodeOrientation="LEFT_TO_RIGHT" onMouseDragged="#handleUpToolBarDragged" onMousePressed="#handleUpToolBarPressed" prefHeight="50.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="recordButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 15; -fx-border-insets: -1; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 14;" text="Record" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 15; -fx-border-insets: -1; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 14;" text="Options" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 15; -fx-border-insets: -1; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 14;" text="Tutorial" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="fullScreenButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleFullScreenButton" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: black; -fx-background-radius: 15; -fx-border-insets: -1; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 14;" text="FullScreen" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+        </items>
+         <effect>
+            <Reflection fraction="0.88" topOpacity="0.58" />
+         </effect>
+      </ToolBar>
+      <ToolBar prefHeight="50.0" rotate="180.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Reflection fraction="0.88" topOpacity="0.58" />
+         </effect>
+         <items>
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="39.0" prefWidth="120.0" rotate="180.0" style="-fx-background-color: black; -fx-background-radius: 15; -fx-border-insets: -1; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 14;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="creditsButton" layoutX="134.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleFullScreenButton" prefHeight="39.0" prefWidth="140.0" rotate="180.0" style="-fx-background-color: black; -fx-background-radius: 15; -fx-border-insets: -1; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 14;" text="Credits" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
